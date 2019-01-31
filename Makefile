@@ -6,13 +6,13 @@
 #    By: nwidaha <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/12/31 10:22:45 by nwidaha           #+#    #+#              #
-#    Updated: 2019/01/30 18:56:49 by nwidaha          ###   ########.fr        #
+#    Updated: 2019/01/30 19:14:31 by nwidaha          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC= gcc
 
-FLAGS= -Wall -Wextra -Werror -I -c 
+FLAGS= -c -I -Wall -Wextra -Werror 
 
 SRCS = 	ft_atoi.c\
 	   	ft_bzero.c\

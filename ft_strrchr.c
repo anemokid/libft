@@ -6,14 +6,11 @@
 /*   By: nwidaha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/15 16:39:20 by nwidaha           #+#    #+#             */
-/*   Updated: 2019/01/18 18:26:05 by nwidaha          ###   ########.fr       */
+/*   Updated: 2019/01/30 19:26:31 by nwidaha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include "ft_strlen.c"
-#include "ft_strchr.c"
+#include "libft.h"
 
 char *ft_strrchr(const char *string, int c )
 {
@@ -40,17 +37,3 @@ char *ft_strrchr(const char *string, int c )
 	}
 	return (NULL);
 }
-
-//int main(void)
-//{
-//	char name[] = "niemaaaaaaiaeeeed"; 
-//	char ch = 'a'; 
-//	char *return_l;
-// 	char *return_f;	
-//
-//	return_l = ft_strrchr(name, ch);	
-//	return_f = ft_strchr(name, ch); 
-//
-//	printf("mem add of last i:%s\n mem add of first i:%s",return_l, return_f);
-//	return(0); 
-//}

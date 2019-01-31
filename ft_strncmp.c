@@ -6,12 +6,11 @@
 /*   By: nwidaha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/18 18:55:23 by nwidaha           #+#    #+#             */
-/*   Updated: 2019/01/19 17:40:47 by nwidaha          ###   ########.fr       */
+/*   Updated: 2019/01/30 19:22:51 by nwidaha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h> 
+#include "libft.h"
 
 int ft_strncmp(const char *string1, const char *string2, size_t n)
 { 
@@ -36,19 +35,7 @@ int ft_strncmp(const char *string1, const char *string2, size_t n)
 			return (0); 
 		} 
 	
-		i++; // increment the index
+		i++;
 	} return (0); 
 
-}
-
-//int main(void)
-//{ 
-//	// test: 
-//	char t1[] = "NIEniema";
-//	char t2[] = "NIEMA";
-//	int val = 3; 
-//
-//	printf(" test t2 - t1: rv: 0  %d", ft_strncmp(t2, t1, val)); 
-//	return(0);
-//
-//} 
+} 

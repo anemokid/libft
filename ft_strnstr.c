@@ -6,14 +6,11 @@
 /*   By: nwidaha <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/19 19:21:20 by nwidaha           #+#    #+#             */
-/*   Updated: 2019/01/20 17:23:49 by nwidaha          ###   ########.fr       */
+/*   Updated: 2019/01/30 19:24:20 by nwidaha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h> 
-#include "ft_strlen.c"
-#include "ft_strncmp.c"
+#include "libft.h"
 
 char *ft_strnstr(const char *haystack, const char *needle, size_t len) 
 {  
@@ -22,10 +19,9 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 	i = 0;
 
-	// drop degenerate edge cases:
 	if(needle[0] == '\0') 
 	{ 
-		return ((char *)haystack); // change to (void *) - to test
+		return ((char *)haystack); 
 	} 	
 
 	while(haystack[i] != '\0' && i < len)
@@ -43,17 +39,4 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	} 
 	return (NULL);
-}  
-
-//int main(void)
-//{ 
-//	// test: 
-// char t1[] = "nima widaha";
-//	char t2[] = "wid";
-//	size_t val = 8; 
-//
-//	char *ret = ft_strnstr(t1, t2, val);
-//
-//	printf("ptr to substring: %s: ", ret); 
-//	return(0);
-//} 
+} 
